@@ -1,0 +1,132 @@
+
+.timer {
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e9ecef;
+}
+
+.timer h3 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.timer button {
+  padding: 12px 25px;
+  font-size: 1.1em;
+  min-width: 100px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timer button:first-child {
+  background: #27ae60;
+  color: white;
+}
+
+.timer button:first-child:hover {
+  background: #219a52;
+  transform: translateY(-2px);
+}
+
+.timer button:last-child {
+  background: #e74c3c;
+  color: white;
+}
+
+.timer button:last-child:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+}
+
+.window-size {
+  text-align: center;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid #3498db;
+}
+
+.window-size h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.window-size p {
+  font-size: 1.2em;
+  margin: 8px 0;
+  color: #34495e;
+  font-weight: 500;
+}
+
+.data-fetcher {
+  text-align: center;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid #9b59b6;
+}
+
+.data-fetcher h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.loading {
+  color: #3498db;
+  font-size: 1.1em;
+  padding: 15px;
+  background: #ebf5fb;
+  border-radius: 8px;
+  border: 1px solid #3498db;
+  margin: 10px 0;
+}
+
+.error {
+  color: #e74c3c;
+  background: #fadbd8;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  border: 1px solid #f5b7b1;
+}
+
+.user-data {
+  text-align: left;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.user-data p {
+  margin: 10px 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 1.1em;
+}
+
+.user-data p:last-child {
+  border-bottom: none;
+}
+
+.user-data strong {
+  color: #2c3e50;
+}

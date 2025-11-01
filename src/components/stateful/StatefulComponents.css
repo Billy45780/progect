@@ -1,0 +1,153 @@
+.counter {
+  text-align: center;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #eee;
+}
+
+.counter h3 {
+  font-size: 1.8em;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.counter-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.user-profile {
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #eee;
+}
+
+.user-profile h3 {
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.profile-form input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.profile-info {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.profile-info p {
+  margin: 12px 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.1em;
+}
+
+.profile-info p:last-child {
+  border-bottom: none;
+}
+
+.effect-demo,
+.local-storage-counter,
+.fetch-demo,
+.theme-toggle {
+  text-align: center;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #eee;
+}
+
+.effect-demo h3,
+.local-storage-counter h3,
+.fetch-demo h3,
+.theme-toggle h4 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.effect-demo p {
+  font-size: 1.1em;
+  margin: 15px 0;
+  color: #555;
+}
+
+.fetch-data {
+  text-align: left;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.fetch-data ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.fetch-data li {
+  margin: 5px 0;
+  color: #555;
+}
+
+
+/* Светлая тема — по умолчанию */
+.loading,
+.error {
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  border: 1px solid #eee;
+  font-size: 1.1em;
+}
+
+.loading {
+  color: #555;
+  background: #fafafa;
+}
+
+.error {
+  color: #c00;
+  background: #fff8f8;
+  border-color: #fdd;
+}
+
+/* Тёмная тема — только при body.dark-mode */
+body.dark-mode .loading,
+body.dark-mode .error {
+  border-color: #3a3a3a;
+}
+
+body.dark-mode .loading {
+  color: #ccc;
+  background: #2a2a2a;
+}
+
+body.dark-mode .error {
+  color: #f8d7da;
+  background: #302525;
+  border-color: #4a3a3a;
+}

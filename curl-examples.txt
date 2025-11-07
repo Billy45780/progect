@@ -1,0 +1,33 @@
+# Главная страница
+curl -X GET http://localhost:3000/
+
+# Получить всех пользователей
+curl -X GET http://localhost:3000/api/users
+
+# Получить пользователя по ID
+curl -X GET http://localhost:3000/api/users/1
+
+# Получить все товары
+curl -X GET http://localhost:3000/api/products
+
+# Получить товары по категории
+curl -X GET "http://localhost:3000/api/products?category=electronics"
+
+# Добавить новый товар
+curl -X POST http://localhost:3000/api/products \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Новый товар", "price": 15000, "category": "electronics"}'
+
+# Обновить товар
+curl -X PUT http://localhost:3000/api/products/1 \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Обновленный товар", "price": 20000}'
+
+# Удалить товар
+curl -X DELETE http://localhost:3000/api/products/1
+
+# Поиск товаров
+curl -X GET "http://localhost:3000/api/search?q=ноут"
+
+# Статистика сервера
+curl -X GET http://localhost:3000/api/stats

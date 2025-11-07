@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-simple-server",
+  "version": "1.0.0",
+  "description": "Простой HTTP сервер на Node.js",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/advanced-server.js",
+    "test": "echo \"Запустите client.html в браузере\""
+  },
+  "keywords": ["nodejs", "http", "server", "api"],
+  "author": "Student",
+  "license": "MIT"
+}

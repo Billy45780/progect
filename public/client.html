@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовый клиент для Node.js API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Тестовый клиент для Node.js API</h1>
+            <p>Интерфейс для тестирования REST API сервера</p>
+        </header>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="endpoint">Endpoint:</label>
+                <select id="endpoint">
+                    <option value="/">Главная страница</option>
+                    <option value="/api/users">Все пользователи</option>
+                    <option value="/api/users/1">Пользователь по ID</option>
+                    <option value="/api/products">Все товары</option>
+                    <option value="/api/products/1">Товар по ID</option>
+                    <option value="/api/search?q=ноут">Поиск товаров</option>
+                    <option value="/api/stats">Статистика</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="method">HTTP Метод:</label>
+                <select id="method">
+                    <option value="GET">GET</option>
+                    <option value="POST">POST</option>
+                    <option value="PUT">PUT</option>
+                    <option value="DELETE">DELETE</option>
+                </select>
+            </div>
+
+            <div class="control-group" id="dataGroup" style="display: none;">
+                <label for="requestData">Данные (JSON):</label>
+                <textarea id="requestData" placeholder='{"name": "Новый товар", "price": 1000, "category": "other"}'></textarea>
+            </div>
+
+            <button id="sendRequest">Отправить запрос</button>
+        </div>
+
+        <div class="results">
+            <h3>Результат:</h3>
+            <div class="response-info">
+                <div>Статус: <span id="statusCode">-</span></div>
+                <div>Время: <span id="responseTime">-</span> мс</div>
+            </div>
+            <pre id="responseOutput"></pre>
+        </div>
+
+        <div class="examples">
+            <h3>Примеры использования:</h3>
+            <div class="example">
+                <strong>GET /api/users</strong> - получить всех пользователей
+            </div>
+            <div class="example">
+                <strong>POST /api/products</strong> - добавить новый товар
+            </div>
+            <div class="example">
+                <strong>PUT /api/products/1</strong> - обновить товар
+            </div>
+            <div class="example">
+                <strong>DELETE /api/products/1</strong> - удалить товар
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

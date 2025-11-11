@@ -1,0 +1,53 @@
+### Health Check - проверка работы сервера
+GET http://localhost:5000/api/health
+
+### Получить все задачи
+GET http://localhost:5000/api/items
+
+### Создать новую задачу
+POST http://localhost:5000/api/items
+Content-Type: application/json
+
+{
+  "title": "Тестовая задача из API",
+  "description": "Описание тестовой задачи"
+}
+
+### Создать задачу без описания
+POST http://localhost:5000/api/items
+Content-Type: application/json
+
+{
+  "title": "Задача без описания"
+}
+
+### Попытка создать задачу без названия (должна вернуть ошибку)
+POST http://localhost:5000/api/items
+Content-Type: application/json
+
+{
+  "title": "",
+  "description": "Задача без названия"
+}
+
+### Получить задачу по ID (замените {id} на реальный ID из предыдущего ответа)
+GET http://localhost:5000/api/items/{id}
+
+### Обновить задачу
+PUT http://localhost:5000/api/items/{id}
+Content-Type: application/json
+
+{
+  "title": "Обновленное название",
+  "description": "Обновленное описание",
+  "completed": true
+}
+
+### Переключить статус выполнения задачи
+PATCH http://localhost:5000/api/items/{id}/toggle
+
+### Удалить задачу
+DELETE http://localhost:5000/api/items/{id}
+
+### Тест обработки ошибок - несуществующий endpoint
+GET http://localhost:5000/api/nonexistent
